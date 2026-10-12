@@ -1,4 +1,4 @@
-/* ---------- Reset & base ---------- */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,10 +6,10 @@
 }
 
 :root {
-    --ink: #1f2340;        /* heading / body text */
-    --accent: #ff6b6b;     /* active nav link */
-    --muted: #8a94a8;      /* tags */
-    --line: #e4e4e8;       /* dividers */
+    --ink: #1f2340;      
+    --accent: #ff6b6b;     
+    --muted: #8a94a8;      
+    --line: #e4e4e8;       
 }
 
 body {
@@ -24,7 +24,19 @@ a {
     text-decoration: none;
 }
 
-/* ---------- Container (tumhara same breakpoint system) ---------- */
+.logo{
+    font-size: 20px;
+    font-weight:bold;
+    position: relative;
+    right: 725px;
+}
+
+.logo:hover{
+    color: #ff6464;
+    cursor: pointer;
+}
+
+
 .container {
     width: 100%;
     max-width: 100%;
@@ -39,7 +51,6 @@ a {
     width: 50%;
 }
 
-/* ---------- Header / Nav ---------- */
 .header .container {
     margin-top: 0;
 }
@@ -56,19 +67,19 @@ a {
 .nav {
     display: flex;
     gap: 24px;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 500;
 }
 
 .nav a.active {
     color: var(--accent);
+
 }
 
 .nav a:hover {
     color: var(--accent);
 }
 
-/* hamburger (desktop par hidden) */
 .menu-btn {
     display: none;
     background: none;
@@ -88,9 +99,8 @@ a {
     background: #6b7280;
 }
 
-/* ---------- Blog ---------- */
 .blog {
-    max-width: 600px;      /* content center me */
+    max-width: 600px;      
     margin: 40px auto 0 auto;
 }
 
@@ -136,7 +146,6 @@ a {
     line-height: 1.6;
 }
 
-/* ---------- Footer ---------- */
 .footer {
     margin-top: 50px;
     padding-bottom: 30px;
@@ -166,116 +175,8 @@ a {
     font-size: 10px;
 }
 
-/* ---------- Responsive (tumhare breakpoints) ---------- */
-@media (max-width: 575px) {
-    .container {
-        width: 100%;
-        flex-direction: column-reverse;
-    }
-    .col-2 {
-        width: 100%;
-    }
 
-    .blog {
-        max-width: 100%;
-        margin: 10px auto 0 auto;
-    }
-    .blog-title {
-        font-size: 28px;
-        margin-bottom: 20px;
-    }
-    .post-title {
-        font-size: 18px;
-    }
-    .footer {
-        margin-top: 30px;
-    }
-}
 
-@media (min-width: 576px) {
-    .container {
-        width: 540px;
-        flex-direction: column-reverse;
-    }
-    .col-2 {
-        width: 100%;
-    }
-}
-
-@media (min-width: 768px) {
-    .container {
-        width: 720px;
-        flex-direction: column-reverse;
-    }
-    .col-2 {
-        width: 100%;
-    }
-}
-
-@media (min-width: 992px) {
-    .container {
-        width: 960px;
-        flex-direction: row;
-    }
-    .col-2 {
-        width: 50%;
-    }
-}
-
-@media (min-width: 1200px) {
-    .container {
-        width: 1140px;
-        flex-direction: row;
-    }
-    .col-2 {
-        width: 50%;
-    }
-}
-
-@media (min-width: 1400px) {
-    .container {
-        width: 1320px;
-        flex-direction: row;
-    }
-    .col-2 {
-        width: 50%;
-    }
-}
-
-/* ---------- Mobile / Tablet nav: words ki jagah icon (767px tak) ---------- */
-@media (max-width: 767px) {
-    .header .header-inner {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: flex-end;
-    }
-    .menu-btn {
-        display: flex;
-    }
-    .nav {
-        display: none;
-        width: 100%;
-        order: 2;
-        flex-direction: column;
-        gap: 12px;
-        padding: 16px 0 4px;
-        text-align: right;
-    }
-    .nav.open {
-        display: flex;
-    }
-}
-
-@media (min-width: 768px) {
-    .menu-btn {
-        display: none;
-    }
-    .nav {
-        display: flex;
-    }
-}
-
-/* ---------- Works page ---------- */
 .works {
     max-width: 640px;
 }
@@ -306,7 +207,6 @@ a {
     display: block;
 }
 
-/* placeholder colors (image lagane par ye hata sakte ho) */
 .thumb-dark  { background-color: #1c1a4a; }
 .thumb-peach { background-color: #f7b99a; }
 .thumb-brown { background-color: #2a2622; }
