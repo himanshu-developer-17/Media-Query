@@ -1,13 +1,23 @@
 .container{
     /* background-color: aliceblue; */
     width: 100%;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     margin: 10px 0px;
 }
 
 .col-2{
     width: 50%;
 }
+
+@media (max-width: 575px) {
+    .container{
+        width: 100%;
+        flex-direction: column-reverse;
+    } 
+    .col-2{
+        width: 100%;
+    }  
+} 
 
 @media (min-width: 576px) {
     .container{
