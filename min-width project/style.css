@@ -1,9 +1,4 @@
 
-/* ========================================
-   BEAN BOUTIQUE - RESPONSIVE COFFEE WEBSITE
-   Mobile-first design using min-width
-======================================== */
-
 :root {
   --cream: #f2d7c8;
   --cream-light: #f8e8dd;
@@ -57,9 +52,6 @@ img {
   overflow: hidden;
 }
 
-/* ========================================
-   HEADER
-======================================== */
 
 .header {
   min-height: 62px;
@@ -142,9 +134,6 @@ img {
   border-radius: 8px;
 }
 
-/* ========================================
-   HERO BANNER
-======================================== */
 
 .hero {
   min-height: 270px;
