@@ -1,0 +1,288 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bean Boutique | Freshly Roasted Coffee</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="site-shell">
+
+    <!-- HEADER -->
+    <header class="header">
+      <a class="brand" href="#home">
+        <span class="brand-mark">☕</span>
+        <span>
+          <strong>bean boutique</strong>
+          <small>COFFEE & GOOD MOOD</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle"
+        aria-label="Open navigation"
+        onclick="document.querySelector('.nav').classList.toggle('nav-open')">
+        ☰
+      </button>
+
+      <nav class="nav">
+        <a class="active" href="#home">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#blog">Blog</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a class="search" href="#shop" aria-label="Search">⌕</a>
+    </header>
+
+    <main>
+
+      <!-- HERO BANNER -->
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow">FRESHLY ROASTED</p>
+          <h1>COFFEE</h1>
+          <p class="hero-text">
+            A better day starts with a better cup.
+          </p>
+          <a class="button button-light" href="#shop">
+            Shop now <span>↗</span>
+          </a>
+        </div>
+
+        <div class="hero-badge">
+          SMALL BATCH<br>
+          <b>BIG FLAVOUR</b>
+        </div>
+      </section>
+
+      <!-- TOP CATEGORIES -->
+      <section class="section categories" id="shop">
+        <div class="section-heading">
+          <p class="eyebrow dark-eyebrow">FIND YOUR FAVOURITE</p>
+          <h2>TOP CATEGORIES</h2>
+          <p>Explore the finest blends made for every coffee moment.</p>
+        </div>
+
+        <div class="category-grid">
+
+          <a class="category-card" href="#products">
+            <img
+              src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=700&q=85"
+              alt="Freshly brewed coffee">
+            <span class="card-shade"></span>
+            <span class="category-label">
+              <strong>Coffee Moods</strong>
+              <small>Rich & bold blends</small>
+            </span>
+          </a>
+
+          <a class="category-card" href="#products">
+            <img
+              src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=700&q=85"
+              alt="Coffee beans and brewing">
+            <span class="card-shade"></span>
+            <span class="category-label">
+              <strong>Espresso Moments</strong>
+              <small>Made to wake you up</small>
+            </span>
+          </a>
+
+          <a class="category-card" href="#products">
+            <img
+              src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=700&q=85"
+              alt="Cup of cappuccino">
+            <span class="card-shade"></span>
+            <span class="category-label">
+              <strong>Cappuccino</strong>
+              <small>Smooth, creamy comfort</small>
+            </span>
+          </a>
+
+        </div>
+      </section>
+
+      <!-- MILK SHAKES -->
+      <section class="section milk-shakes" id="products">
+        <div class="section-heading">
+          <p class="eyebrow dark-eyebrow">COOL, CREAMY & DELICIOUS</p>
+          <h2>TOP MILK SHAKES</h2>
+          <p>Explore the flavour that makes your day a little sweeter.</p>
+        </div>
+
+        <div class="product-grid">
+
+          <article class="product-card">
+            <span class="tag">BEST SELLER</span>
+            <img
+              src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=500&q=85"
+              alt="Chocolate milkshake">
+            <h3>Mocha Bliss</h3>
+            <p class="description">Chocolate · Espresso</p>
+            <div class="product-bottom">
+              <strong>$20.00</strong>
+              <button aria-label="Add Mocha Bliss to cart">+</button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <span class="tag">NEW</span>
+            <img
+              src="https://images.unsplash.com/photo-1541658016709-82535e94bc69?auto=format&fit=crop&w=500&q=85"
+              alt="Vanilla milkshake">
+            <h3>Lavender Twist</h3>
+            <p class="description">Vanilla · Floral</p>
+            <div class="product-bottom">
+              <strong>$22.00</strong>
+              <button aria-label="Add Lavender Twist to cart">+</button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <span class="tag">POPULAR</span>
+            <img
+              src="https://images.unsplash.com/photo-1553787499-6f9133860278?auto=format&fit=crop&w=500&q=85"
+              alt="Caramel milkshake">
+            <h3>Caramel Swirl</h3>
+            <p class="description">Caramel · Cream</p>
+            <div class="product-bottom">
+              <strong>$20.00</strong>
+              <button aria-label="Add Caramel Swirl to cart">+</button>
+            </div>
+          </article>
+
+          <article class="product-card extra-product">
+            <span class="tag">FAN FAVOURITE</span>
+            <img
+              src="https://images.unsplash.com/photo-1579954115545-a95591f28bfc?auto=format&fit=crop&w=500&q=85"
+              alt="Creamy strawberry shake">
+            <h3>Berry Cloud</h3>
+            <p class="description">Berry · Cream</p>
+            <div class="product-bottom">
+              <strong>$21.00</strong>
+              <button aria-label="Add Berry Cloud to cart">+</button>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- LATEST BLOGS -->
+      <section class="section blog" id="blog">
+        <div class="section-heading">
+          <p class="eyebrow dark-eyebrow">NOTES FROM OUR CAFE</p>
+          <h2>LATEST BLOGS</h2>
+          <p>Explore the finest coffee stories and tips this week.</p>
+        </div>
+
+        <div class="blog-grid">
+
+          <article class="blog-card">
+            <img
+              src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=700&q=85"
+              alt="Barista preparing coffee">
+            <div class="blog-content">
+              <p class="blog-meta">COFFEE GUIDE · 5 MIN READ</p>
+              <h3>Coffee Connoisseur</h3>
+              <p>Discover the little details that make your daily cup extraordinary.</p>
+              <a href="#about">Read more <span>↗</span></a>
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <img
+              src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=700&q=85"
+              alt="Coffee shop and barista">
+            <div class="blog-content">
+              <p class="blog-meta">OUR COMMUNITY · 4 MIN READ</p>
+              <h3>Our Brew, Your Ritual</h3>
+              <p>Good coffee brings people together, one cup at a time.</p>
+              <a href="#about">Read more <span>↗</span></a>
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <img
+              src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=700&q=85"
+              alt="Warm and welcoming cafe interior">
+            <div class="blog-content">
+              <p class="blog-meta">CAFE CULTURE · 6 MIN READ</p>
+              <h3>The Perfect Coffee Break</h3>
+              <p>Make room in your day for a moment of calm and a great coffee.</p>
+              <a href="#about">Read more <span>↗</span></a>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="contact">
+      <div class="footer-main">
+
+        <div class="footer-brand">
+          <a class="brand footer-logo" href="#home">
+            <span class="brand-mark">☕</span>
+            <span>
+              <strong>bean boutique</strong>
+              <small>COFFEE & GOOD MOOD</small>
+            </span>
+          </a>
+          <p>Good coffee. Good people. Good days.</p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Products</h4>
+          <a href="#products">Coffee</a>
+          <a href="#products">Milk Shakes</a>
+          <a href="#products">New Arrivals</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Categories</h4>
+          <a href="#shop">Espresso</a>
+          <a href="#shop">Cold Coffee</a>
+          <a href="#shop">Special Blends</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Company Info</h4>
+          <a href="#about">About Us</a>
+          <a href="#blog">Our Blog</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer-column social">
+          <h4>Follow us</h4>
+          <a href="#">◎ Instagram</a>
+          <a href="#">f Facebook</a>
+          <a href="#">ⓟ Pinterest</a>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Bean Boutique. All rights reserved.</span>
+        <div>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Help Center</a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+</html>

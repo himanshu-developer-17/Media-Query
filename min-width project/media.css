@@ -1,0 +1,458 @@
+@media (min-width: 576px) {
+  .header {
+    padding: 14px 26px;
+    min-height: 70px;
+  }
+
+  .brand strong {
+    font-size: 16px;
+  }
+
+  .brand small {
+    font-size: 7px;
+  }
+
+  .hero {
+    min-height: 320px;
+    padding-left: 7%;
+  }
+
+  .hero h1 {
+    font-size: 64px;
+  }
+
+  .section {
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+
+  .category-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .category-card {
+    height: 145px;
+  }
+
+  .category-label {
+    left: 10px;
+    bottom: 10px;
+  }
+
+  .category-label strong {
+    font-size: 12px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .product-card {
+    padding: 8px;
+  }
+
+  .product-card img {
+    height: 120px;
+  }
+
+  .product-card h3 {
+    font-size: 12px;
+  }
+
+  .blog-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .blog-card > img {
+    height: 145px;
+  }
+
+  .footer-main {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* ========================================
+   MEDIUM DEVICES
+   md: 768px and up
+======================================== */
+
+@media (min-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
+  .site-shell {
+    border-radius: 3px;
+  }
+
+  .header {
+    padding: 15px 34px;
+    gap: 22px;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    gap: clamp(15px, 2.5vw, 30px);
+    margin-left: auto;
+  }
+
+  .search {
+    margin-left: 3px;
+  }
+
+  .brand-mark {
+    font-size: 29px;
+  }
+
+  .brand strong {
+    font-size: 17px;
+  }
+
+  .hero {
+    min-height: 390px;
+    padding-left: 8%;
+  }
+
+  .hero h1 {
+    font-size: 76px;
+  }
+
+  .hero .eyebrow {
+    font-size: 11px;
+  }
+
+  .hero-text {
+    font-size: 14px;
+  }
+
+  .hero-badge {
+    display: block;
+    position: absolute;
+    right: 7%;
+    bottom: 24%;
+    padding: 13px 17px;
+    border: 1px solid #ffffff8c;
+    border-radius: 50%;
+    font-size: 8px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 1px;
+    transform: rotate(9deg);
+  }
+
+  .hero-badge b {
+    font-size: 10px;
+  }
+
+  .section {
+    padding: 36px 5% 10px;
+  }
+
+  .section-heading {
+    margin-bottom: 22px;
+  }
+
+  .section-heading h2 {
+    font-size: 25px;
+  }
+
+  .section-heading > p:last-child {
+    font-size: 11px;
+  }
+
+  .category-card {
+    height: 175px;
+  }
+
+  .category-label strong {
+    font-size: 14px;
+  }
+
+  .product-card {
+    padding: 10px;
+  }
+
+  .product-card img {
+    height: 145px;
+  }
+
+  .product-card h3 {
+    font-size: 14px;
+  }
+
+  .blog-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .blog-card > img {
+    height: 155px;
+  }
+
+  .footer {
+    padding: 34px 5% 15px;
+  }
+
+  .footer-main {
+    grid-template-columns: 1.5fr 1fr 1fr 1.2fr 1fr;
+    gap: 22px;
+  }
+
+  .footer-bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+/* ========================================
+   LARGE DEVICES
+   lg: 1024px and up
+======================================== */
+
+@media (min-width: 1024px) {
+  .header {
+    padding: 18px 5%;
+  }
+
+  .brand strong {
+    font-size: 19px;
+  }
+
+  .nav {
+    gap: 32px;
+  }
+
+  .nav a {
+    font-size: 13px;
+  }
+
+  .hero {
+    min-height: 455px;
+    padding-left: 9%;
+    background-position: center 48%;
+  }
+
+  .hero h1 {
+    font-size: 88px;
+  }
+
+  .hero-text {
+    font-size: 15px;
+  }
+
+  .hero-badge {
+    right: 10%;
+    bottom: 22%;
+  }
+
+  .section {
+    padding-top: 43px;
+  }
+
+  .section-heading h2 {
+    font-size: 28px;
+  }
+
+  .category-grid {
+    gap: 18px;
+  }
+
+  .category-card {
+    height: 205px;
+  }
+
+  .category-label {
+    left: 16px;
+    bottom: 16px;
+  }
+
+  .category-label strong {
+    font-size: 16px;
+  }
+
+  .product-grid {
+    gap: 15px;
+  }
+
+  .product-card {
+    padding: 12px;
+  }
+
+  .product-card img {
+    height: 175px;
+  }
+
+  .product-card h3 {
+    font-size: 15px;
+  }
+
+  .blog-grid {
+    gap: 18px;
+  }
+
+  .blog-card > img {
+    height: 185px;
+  }
+
+  .blog-content {
+    padding: 15px;
+  }
+
+  .blog-content h3 {
+    font-size: 17px;
+  }
+}
+
+/* ========================================
+   EXTRA-LARGE DEVICES
+   xl: 1280px and up
+======================================== */
+
+@media (min-width: 1280px) {
+  .site-shell {
+    max-width: 1320px;
+  }
+
+  .header {
+    min-height: 82px;
+  }
+
+  .hero {
+    min-height: 520px;
+  }
+
+  .hero h1 {
+    font-size: 100px;
+  }
+
+  .hero-copy {
+    max-width: 550px;
+  }
+
+  .button {
+    padding: 11px 18px;
+    font-size: 11px;
+  }
+
+  .section {
+    padding-top: 50px;
+    padding-bottom: 14px;
+  }
+
+  .section-heading {
+    margin-bottom: 28px;
+  }
+
+  .section-heading h2 {
+    font-size: 31px;
+  }
+
+  .section-heading > p:last-child {
+    font-size: 12px;
+  }
+
+  .category-card {
+    height: 235px;
+  }
+
+  .category-label strong {
+    font-size: 18px;
+  }
+
+  .product-card img {
+    height: 205px;
+  }
+
+  .product-card h3 {
+    font-size: 17px;
+  }
+
+  .description {
+    font-size: 10px;
+  }
+
+  .blog-card > img {
+    height: 220px;
+  }
+
+  .footer {
+    padding-top: 42px;
+  }
+}
+
+/* ========================================
+   EXTRA-EXTRA-LARGE DEVICES
+   2xl: 1536px and up
+======================================== */
+
+@media (min-width: 1536px) {
+  .site-shell {
+    max-width: 1440px;
+  }
+
+  .header {
+    padding-left: 76px;
+    padding-right: 76px;
+  }
+
+  .hero {
+    min-height: 570px;
+    padding-left: 9%;
+  }
+
+  .hero h1 {
+    font-size: 112px;
+  }
+
+  .hero-text {
+    font-size: 16px;
+  }
+
+  .section {
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 58px;
+  }
+
+  .category-card {
+    height: 260px;
+  }
+
+  .product-card img {
+    height: 225px;
+  }
+
+  .blog-card > img {
+    height: 240px;
+  }
+
+  .footer {
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+}
+
+/* ========================================
+   ACCESSIBILITY
+======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+  }
+}
