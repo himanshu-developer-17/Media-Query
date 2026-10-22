@@ -83,7 +83,6 @@ ul {
 
 .hamburger {
     display: none;
-    /* shown only on mobile */
     flex-direction: column;
     gap: 3px;
     padding: 6px;
